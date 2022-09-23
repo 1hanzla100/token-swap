@@ -1,0 +1,17 @@
+dotenv: .env
+
+project_structure:
+    build: ../frontend/src/artifacts
+
+wallets:
+    from_key: ${PRIVATE_KEY}
+
+dependencies:
+    - OpenZeppelin/openzeppelin-contracts@4.5.0
+
+compiler:
+    solc:
+        version: 0.8.13
+        remappings:
+            - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.5.0"
+
